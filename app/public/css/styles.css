@@ -5603,6 +5603,10 @@ header.header_block nav.top-bar {
     header.header_block nav.top-bar ul.title-area li.name h1 {
       text-align: left;
       padding-left: 78px; }
+      @media only screen and (min-width:40.063em) {
+        header.header_block nav.top-bar ul.title-area li.name h1 {
+          text-align: center;
+          padding-left: 18px; } }
       header.header_block nav.top-bar ul.title-area li.name h1 a {
         font-size: 1.1em;
         color: #03C5C5;
@@ -5792,7 +5796,7 @@ footer.footer_block {
         background-color: #03C5C5;
         margin-top: 8px;
         padding-bottom: 8px;
-        margin-bottom: 46px; } }
+        margin-bottom: 64px; } }
     footer.footer_block .footer_banner p {
       text-align: center;
       font-size: 0.9em;

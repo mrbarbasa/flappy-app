@@ -76,6 +76,11 @@ header.header_block {
           text-align: left;
           padding-left: 78px;
 
+          @media #{$medium-up} {
+            text-align: center;
+            padding-left: 18px;
+          }
+
           a {
             // background-color: red;
             @include font_settings(1.1em, $color_aqua, 400, uppercase, 4px);
@@ -335,7 +340,7 @@ footer.footer_block {
       background-color: $color_aqua;
       margin-top: 8px;
       padding-bottom: 8px;
-      margin-bottom: 46px;
+      margin-bottom: 64px;
     }
 
     p {
