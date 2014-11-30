@@ -1,8 +1,7 @@
 @import "partials/settings";
 @import "partials/mixins";
 @import "../public/bower_components/foundation/scss/foundation";
-
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 
 $color_darkgrey: #26282D;
 $color_aqua: #03C5C5;
@@ -19,10 +18,14 @@ $color_teal: #039696;
 header.header_block {
   nav.top-bar {
     background-color: $color_darkgrey;
-    // background-color: lightblue;
     background-image: url('/images/border.png');
     background-repeat: repeat-x;
     padding: 22px 0 45px 0;
+
+    @media #{$medium-up} {
+      padding: 70px;
+      padding-right: 45px;
+    }
 
     ul.title-area {
       // background-color: red;
@@ -37,6 +40,11 @@ header.header_block {
           left: 10px;
           top: -10px;
 
+          @media #{$medium-up} {
+            left: -30px;
+            top: 0;
+          }
+
           img {
             width: 100%;
             height: auto;
@@ -49,10 +57,26 @@ header.header_block {
           padding-left: 18px;
 
           a {
+            // background-color: red;
             @include font_settings(1.1em, $color_aqua, 400, uppercase, 4px);
 
+            @media #{$medium-up} {
+              letter-spacing: 3px;
+              display: block;
+              padding: 0;
+              margin-left: 32px;
+              margin-top: -24px;
+              line-height: 20px;
+            }
+
             span {
+              // background-color: lightgrey;
               color: $color_white;
+
+              @media #{$medium-up} {
+                display: block;
+                text-align: left;
+              }
             }
           }
         }
@@ -81,11 +105,22 @@ header.header_block {
       ul.right {
         li {
           a {
+            @include font_settings(0.9em, $color_aqua, 400, uppercase, 2px, 1.35em);
 
+            @media #{$medium-up} {
+              background-color: $color_darkgrey;
+              padding: 0;
+              padding-left: 28px;
+              margin-top: -9px;
+            }
+
+            &:hover {
+              color: $color_white;
+            }
           }
         }
       }
-    }
+    } // section.top-bar-section
   } // nav.top-bar
 } // header.header_block
 

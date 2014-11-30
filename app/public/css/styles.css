@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 meta.foundation-version {
   font-family: "/5.4.7/"; }
 
@@ -5562,6 +5562,10 @@ header.header_block nav.top-bar {
   background-image: url('/images/border.png');
   background-repeat: repeat-x;
   padding: 22px 0 45px 0; }
+  @media only screen and (min-width:40.063em) {
+    header.header_block nav.top-bar {
+      padding: 70px;
+      padding-right: 45px; } }
   header.header_block nav.top-bar ul.title-area li.name {
     position: relative; }
     header.header_block nav.top-bar ul.title-area li.name .flappy_logo {
@@ -5569,6 +5573,10 @@ header.header_block nav.top-bar {
       position: absolute;
       left: 10px;
       top: -10px; }
+      @media only screen and (min-width:40.063em) {
+        header.header_block nav.top-bar ul.title-area li.name .flappy_logo {
+          left: -30px;
+          top: 0; } }
       header.header_block nav.top-bar ul.title-area li.name .flappy_logo img {
         width: 100%;
         height: auto; }
@@ -5582,14 +5590,41 @@ header.header_block nav.top-bar {
         text-transform: uppercase;
         letter-spacing: 4px;
         line-height: 1.5em; }
+        @media only screen and (min-width:40.063em) {
+          header.header_block nav.top-bar ul.title-area li.name h1 a {
+            letter-spacing: 3px;
+            display: block;
+            padding: 0;
+            margin-left: 32px;
+            margin-top: -24px;
+            line-height: 20px; } }
         header.header_block nav.top-bar ul.title-area li.name h1 a span {
           color: #FFFFFF; }
+          @media only screen and (min-width:40.063em) {
+            header.header_block nav.top-bar ul.title-area li.name h1 a span {
+              display: block;
+              text-align: left; } }
   header.header_block nav.top-bar ul.title-area li.toggle-topbar.menu-icon {
     margin-top: -28px; }
     header.header_block nav.top-bar ul.title-area li.toggle-topbar.menu-icon a span::after {
       right: 22px;
       width: 22px;
       box-shadow: 0 0px 0 2px #03C5C5, 0 8px 0 2px #03C5C5, 0 16px 0 2px #03C5C5; }
+  header.header_block nav.top-bar section.top-bar-section ul.right li a {
+    font-size: 0.9em;
+    color: #03C5C5;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.35em; }
+    @media only screen and (min-width:40.063em) {
+      header.header_block nav.top-bar section.top-bar-section ul.right li a {
+        background-color: #26282D;
+        padding: 0;
+        padding-left: 28px;
+        margin-top: -9px; } }
+    header.header_block nav.top-bar section.top-bar-section ul.right li a:hover {
+      color: #FFFFFF; }
 
 @media only screen and (max-width:64em) {
   .main_content .row .columns {
