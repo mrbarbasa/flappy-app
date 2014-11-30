@@ -90,6 +90,20 @@ header.header_block {
 } // header.header_block
 
 .main_content {
+  @media #{$medium-down} {
+    .row {
+      .columns {
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+
+  @media #{$large-up} {
+    // background-color: orange;
+    padding-top: 48px;
+  }
+
   section.content_features {
     .content_bg {
       background-image: url('/images/scenery.png');
@@ -101,6 +115,10 @@ header.header_block {
       @media #{$medium-up} {
         background-repeat: repeat-x;
         background-position: 0% 50%;
+      }
+
+      @media #{$large-up} {
+        border: 4px solid $color_darkgrey;
       }
     }
 
@@ -149,8 +167,17 @@ header.header_block {
       padding: 32px 72px 22px 48px;
     }
 
+    @media #{$large-up} {
+      padding: 20px 0;
+    }
+
     p {
       @include font_settings(1.5em, $color_darkgrey, 700, none, none, 1.35em);
+
+      @media #{$large-up} {
+        // background-color: lightgrey;
+        @include font_settings(1.7em, $color_darkgrey, 700, none, 1px, 1.23em);
+      }
     }
   } // section.content_text
 } // .main_content
@@ -191,6 +218,10 @@ footer.footer_block {
 
         a {
           @include font_settings(0.9em, $color_aqua, 400, uppercase, 2px, 1.35em);
+
+          &:hover {
+            color: $color_white;
+          }
         }
       }
     }
