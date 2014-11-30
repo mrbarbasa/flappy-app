@@ -1,6 +1,4 @@
-$color_darkgrey: #26282D;
-$color_aqua: #03C5C5;
-$color_white: #FFFFFF;
+// Globals defined in _settings.scss
 
 @mixin font_settings($font_size: 1em,
                       $font_color: $color_darkgrey,
