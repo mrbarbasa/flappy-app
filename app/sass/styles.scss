@@ -1,2 +1,119 @@
 @import "partials/settings";
+@import "partials/mixins";
 @import "../public/bower_components/foundation/scss/foundation";
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+
+$color_darkgrey: #26282D;
+$color_aqua: #03C5C5;
+$color_white: #FFFFFF;
+
+// $font_size: 1em,
+// $font_color: $color_darkgrey,
+// $font_weight: normal,
+// $font_transform: uppercase,
+// $font_spacing: none,
+// $font_lineheight: 1.5em
+
+header.header_block {
+  // background-color: $color_darkgrey;
+  // background-image: url('/images/border.png');
+  // background-repeat: repeat-x;
+
+  nav.top-bar {
+    background-color: $color_darkgrey;
+    // background-color: lightblue;
+    background-image: url('/images/border.png');
+    background-repeat: repeat-x;
+    padding: 22px 0 45px 0;
+
+    ul.title-area {
+      li.name {
+        position: relative;
+
+        .flappy_logo {
+          // background-color: yellow;
+          width: 76px;
+          position: absolute;
+          left: 10px;
+          top: -10px;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        h1 {
+          // background-color: pink;
+          text-align: center;
+          padding-left: 18px;
+
+          a {
+            @include font_settings(1.1em, $color_aqua, 400, uppercase, 4px);
+
+            span {
+              color: $color_white;
+            }
+          }
+        }
+      } // li.name
+
+      li.toggle-topbar.menu-icon {
+        // background-color: grey;
+        margin-top: -28px; // Override -16px
+
+        a {
+          span {
+            &::after {
+              right: 22px; // Override 15px
+              width: 22px; // Override 16px
+              // Override
+              box-shadow: 0 0px 0 2px $color_aqua,
+                          0 8px 0 2px $color_aqua,
+                          0 16px 0 2px $color_aqua;
+            }
+          }
+        }
+      }
+    }
+
+    section.top-bar-section {
+      ul.right {
+        li {
+          a {
+
+          }
+        }
+      }
+
+      ul.left {
+        li {
+          a {
+
+          }
+          img {
+
+          }
+        }
+      }
+    }
+  } // nav.top-bar
+
+  // nav.header_nav {
+  //   // background-color: teal;
+  //   // display: inline-block;
+
+  //   ul {
+  //     list-style-type: none;
+
+  //     li {
+  //       // display: inline-block;
+  //       a {
+  //         background-color: yellow;
+  //         @include font_settings(0.9em, $color_aqua, 400, uppercase, 2px);
+  //       }
+  //     }
+  //   }
+  // }
+}
