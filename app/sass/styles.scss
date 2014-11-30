@@ -201,6 +201,7 @@ footer.footer_block {
   }
 
   nav.footer_nav {
+    // background-color: lightgrey;
     padding: 26px 20px 39px 20px;
 
     @media #{$medium-up} {
@@ -211,6 +212,11 @@ footer.footer_block {
       // background-color: tan;
       list-style-type: none;
       margin: 0;
+
+      @media #{$large-up} {
+        border-left: 3px solid $color_aqua;
+        padding-left: 28px;
+      }
 
       li {
         // background-color: pink;
@@ -232,13 +238,26 @@ footer.footer_block {
     padding-top: 8px;
     padding-bottom: 6px;
 
-    @media #{$medium-up} {
+    @media #{$medium-only} {
       padding-top: 3px;
     }
 
+    @media #{$large-up} {
+      background-color: $color_aqua;
+      margin-top: 8px;
+      padding-bottom: 8px;
+      margin-bottom: 46px;
+    }
+
     p {
+      // background-color: yellow;
       text-align: center;
       @include font_settings(0.9em, $color_white, 400, uppercase, 2px, 1.35em);
+
+      @media #{$large-up} {
+        margin: 0;
+        @include font_settings(0.9em, $color_darkgrey, 900, uppercase, 2px, 1.35em);
+      }
     }
   } // .footer_banner
 } // footer.footer_block
