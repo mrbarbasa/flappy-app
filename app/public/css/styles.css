@@ -5590,3 +5590,50 @@ header.header_block nav.top-bar {
       right: 22px;
       width: 22px;
       box-shadow: 0 0px 0 2px #03C5C5, 0 8px 0 2px #03C5C5, 0 16px 0 2px #03C5C5; }
+
+.main_content section.content_features .content_bg {
+  background-image: url('/images/scenery.png');
+  background-repeat: no-repeat;
+  background-position: 97% 50%;
+  width: 100%;
+  height: 266px; }
+.main_content section.content_features nav.features_nav {
+  background-color: tan;
+  text-align: center; }
+  .main_content section.content_features nav.features_nav ul {
+    background-color: yellow;
+    list-style-type: none;
+    margin: 0; }
+    .main_content section.content_features nav.features_nav ul li {
+      background-color: #03C5C5;
+      border-bottom: 1px solid #039696;
+      padding: 14px 0; }
+      .main_content section.content_features nav.features_nav ul li:first-child {
+        background-color: #26282D;
+        border: 1px solid #26282D;
+        padding: 6px 0; }
+        .main_content section.content_features nav.features_nav ul li:first-child h2 {
+          font-size: 1em;
+          color: #03C5C5;
+          font-weight: 400;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          line-height: 1.35em; }
+      .main_content section.content_features nav.features_nav ul li a {
+        font-size: 0.9em;
+        color: #26282D;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        line-height: 1.35em; }
+        .main_content section.content_features nav.features_nav ul li a span {
+          color: #FFFFFF; }
+.main_content section.content_text {
+  padding: 27px 56px 17px 36px; }
+  .main_content section.content_text p {
+    font-size: 1.5em;
+    color: #26282D;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: none;
+    line-height: 1.35em; }
