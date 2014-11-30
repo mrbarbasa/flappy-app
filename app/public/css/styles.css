@@ -5569,10 +5569,12 @@ th.hide-for-touch {
 header.header_block nav.top-bar {
   background-color: #26282D;
   padding: 22px 0 45px 0; }
-  @media only screen and (min-width:40.063em) and (max-width:64em) {
+  @media only screen and (max-width:64em) {
     header.header_block nav.top-bar {
       background-image: url('/images/border.png');
-      background-repeat: repeat-x;
+      background-repeat: repeat-x; } }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    header.header_block nav.top-bar {
       padding: 70px;
       padding-right: 45px; } }
   @media only screen and (min-width:64.063em) {
@@ -5599,8 +5601,8 @@ header.header_block nav.top-bar {
         width: 100%;
         height: auto; }
     header.header_block nav.top-bar ul.title-area li.name h1 {
-      text-align: center;
-      padding-left: 18px; }
+      text-align: left;
+      padding-left: 78px; }
       header.header_block nav.top-bar ul.title-area li.name h1 a {
         font-size: 1.1em;
         color: #03C5C5;
