@@ -5754,6 +5754,9 @@ header.header_block nav.top-bar {
         text-transform: none;
         letter-spacing: 1px;
         line-height: 1.23em; } }
+    .main_content section.content_text p span.bird img {
+      width: 50px;
+      height: auto; }
 
 footer.footer_block {
   background-color: #26282D;

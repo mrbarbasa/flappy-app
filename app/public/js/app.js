@@ -16,4 +16,15 @@ $(function() {
   $("#about").click(function() {
     loadContentArea();
   });
+
+  $(".content_text .row .columns").on('mouseenter', 'span.bird', function() {
+    $(this).html($("<img>", {
+      src: "/images/logo.png",
+      alt: "Flappy Bird"
+    }));
+  });
+
+  $(".content_text .row .columns").on('mouseleave', 'span.bird', function() {
+    $(this).html("bird");
+  });
 });

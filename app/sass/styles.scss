@@ -279,6 +279,13 @@ header.header_block {
         // background-color: lightgrey;
         @include font_settings(1.7em, $color_darkgrey, 700, none, 1px, 1.23em);
       }
+
+      span.bird {
+        img {
+          width: 50px;
+          height: auto;
+        }
+      }
     }
   } // section.content_text
 } // .main_content
