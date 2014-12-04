@@ -1,14 +1,11 @@
-// mkdir api // in public
-// curl > api/about.json
-
 $(function() {
-  // Test
-  $(".top-bar-section ul.right > li > a").click(function() {
-    alert("Hello World");
+  $("#specs").click(function() {
+    $.get( "/api/spec.json", function( data ) {
+      $(".content_text .row .columns").html(data.body);
+    }, "json" );
   });
 
   $.get( "/api/about.json", function( data ) {
-    alert(data.body);
-    $(".content_text p").append(data.body);
+    $(".content_text .row .columns").html(data.body);
   }, "json" );
 });
