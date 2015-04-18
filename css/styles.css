@@ -5564,14 +5564,14 @@ th.hide-for-touch {
 @media only screen and (min-width:64.063em) {
   header.header_block {
     background-color: #26282D;
-    background-image: url('./images/border.png');
+    background-image: url('../images/border.png');
     background-repeat: repeat-x; } }
 header.header_block nav.top-bar {
   background-color: #26282D;
   padding: 22px 0 45px 0; }
   @media only screen and (max-width:64em) {
     header.header_block nav.top-bar {
-      background-image: url('./images/border.png');
+      background-image: url('../images/border.png');
       background-repeat: repeat-x; } }
   @media only screen and (min-width:40.063em) and (max-width:64em) {
     header.header_block nav.top-bar {
@@ -5688,7 +5688,7 @@ header.header_block nav.top-bar {
   .main_content {
     padding-top: 48px; } }
 .main_content section.content_features .content_bg {
-  background-image: url('./images/scenery.png');
+  background-image: url('../images/scenery.png');
   background-repeat: no-repeat;
   background-position: 97% 50%;
   width: 100%;
@@ -5757,7 +5757,7 @@ header.header_block nav.top-bar {
 
 footer.footer_block {
   background-color: #26282D;
-  background-image: url('./images/border.png');
+  background-image: url('../images/border.png');
   background-repeat: repeat-x; }
   @media only screen and (max-width: 40em) {
     footer.footer_block #center_nav {
